@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>CSS</title>
+    <style>
+        .row{
+            display: flex;
+        }
+        .rightcolumn{
+            float: right;
+            width: 50%;
+            top: 50%;
+            bottom: 50%;
+        }
+        .leftcolumn{
+            float: left;
+            width: 50%;
+            top: 50%;
+            bottom: 50%;
+        }
+        body{
+            background-image: url(./wallpaper.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+            <div class="login">
+                <div class="row">
+                    <div class="leftcolumn">
+                        <img src="./juve.gif" alt="juve-logo" width="240px">
+                    </div>
+                    <div class="rightcolumn">
+                        <h3 style="text-align: center">Log in</h3>
+                        <form method="get">
+                            <label for="username"><b>Username</b></label>
+                            <input id="username" type="email" name="username" required>
+                            <br>
+                            <label for="password"><b>Password</b></label>
+                            <input id="password" type="password" name="password" required minlength="8">
+                            <br>
+                            <div class="block">
+                                <input type="checkbox" id="checkbox" name="checkbox">
+                                <label for="checkbox" style="font-size: 13px">Remember me</label>
+                                <label for="checkbox" style="font-size: 13px">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+                                </label>
+                            </div>
+
+                            <br>
+                            <input type="submit" value="Log in ">
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+</body>
+</html>

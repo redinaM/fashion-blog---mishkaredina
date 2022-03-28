@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Sign up</title>
+        <link rel="icon" href="./login-logo.jpg">
+        <style type="text/css">
+        body
+		{
+			margin: 0px;
+			padding: 0px;
+            background-color: #917b6d;
+			font-family: sans-serif;
+            box-sizing: border-box
+		}
+        .loginbox
+		{
+			width: 800px;
+			height: 480px;
+			top: 50%;
+			left: 50%;
+			position: absolute;
+			background-color:	white;
+			color: #917b6d;
+			box-sizing: border-box;
+			transform: translate(-50%,-50%);
+			padding: 30px 30px;
+		}
+        .rightcolumn{
+            float: right;
+            width: 50%;
+            top: 50%;
+            bottom: 50%;
+        }
+        .leftcolumn{
+            float: left;
+            width: 50%;
+            top: 50%;
+            bottom: 50%;
+        }
+        input[type=text]{
+            width: 56%;
+            padding: 7px;
+            margin: 2px 0 10px 0;
+            box-sizing: border-box;
+            border: 2px solid #917b6d;
+            border-radius: 10px;
+        }
+        input[type=password]{
+            width: 58%;
+            padding: 7px;
+            margin: 2px 0 10px 0;
+            box-sizing: border-box;
+            border: 2px solid #917b6d;
+            border-radius: 10px;
+        }
+        input[type=date]{
+            width: 61%;
+            padding: 7px;
+            margin: 2px 0 10px 0;
+            box-sizing: border-box;
+            border: 2px solid #917b6d;
+            border-radius: 10px;
+        }
+        input[type=number]{
+            width: 43%;
+            padding: 7px;
+            margin: 2px 0 10px 0;
+            box-sizing: border-box;
+            border: 2px solid #917b6d;
+            border-radius: 10px;
+        }
+        input[type=email]{
+            width: 66%;
+            padding: 7px;
+            margin: 2px 0 10px 0;
+            box-sizing: border-box;
+            border: 2px solid #917b6d;
+            border-radius: 10px;
+        }
+        .button{
+  background-color: #917b6d;
+  align-items: center;
+  width: 33.3%;
+  border: none;
+  color: white;
+  padding: 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0px;
+  border-radius: 10px;
+}
+.button:hover{
+    background-color: 	#d3b09f;
+    color: #917b6d;
+}
+h1{
+    color: #917b6d;
+}
+
+        </style>
+    </head>
+<body>
+    <div class="loginbox">
+        <div class="row">
+            <div class="rightcolumn">
+                <h2 align="center" style="font-size: 30px"> Create account  </h2>
+                <form method="post">
+                    <label for="name">First Name</label>
+                    <input id="name" type="text" name="name" required>
+                    <br>
+
+                    <label for="surname">Last Name</label>
+                    <input id="surname" type="text" name="surname" required >
+                    <br>
+
+                    <label for="birthday">Birthday</label>
+                    <input id="birthday" type="date" name="birthday" required>
+                    <br>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email"  name="email" pattern="[a-zA-Z0-9]+@epoka.edu.al" required>
+                    <br>
+
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" required >
+                    <br>
+
+                    <label for="pNumber">Personal Number</label>
+                    <input id="pNumber" type="number" name="pNumber" required >
+                    <br>
+
+                    <label for="photo">Photo</label>
+                            <input id="avatar" type="file">
+                            <br>
+                            <br>
+                            <input type="submit" class="button" value="Register" onclick="document.location='login.html'">
+                            <input type="reset" class="button" value="Cancel" name="reset">
+
+                </form>
+            </div>
+
+            <div class="leftcolumn">
+                <img src="./signup-gif.gif" alt="eating healthy" width="280px" height="400px">
+            </div>
+            </div>
+        </div>
+</body>
+</html>

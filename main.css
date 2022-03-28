@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+  }
+.body{
+    margin: 0;
+}
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+.header{
+    text-align: left;
+    background-image: url(./11.jpg);
+    min-height: 270px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    color: #917b6d;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+
+h2{
+  position: absolute;
+  left: 225px;
+  top: 80px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 70px;
+  left: 155px;
+  font-size: 14px;
+}
+
+.topnav{
+    background-color:#917b6d;
+    overflow: hidden;
+}
+
+.topnav a{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 32px;
+  text-decoration: none;
+}
+.topmenu a{
+  float: right;
+}
+.topnav a:hover{
+    background-color: #e9ddd4;
+    color:#917b6d;
+    text-decoration: underline;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v85/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 26px;
+  color: #917b6d;
+  line-height: 1;
+  letter-spacing: 10px;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+.column{
+    float: left;
+    color: #192b2b;
+    padding: 15 px;
+}
+.rightcolumn{
+    float: left;
+    width: 77%;
+    padding-left: 20px;
+    background-color: #f6efeb;
+}
+.leftcolumn{
+    float: left;
+    width: 23%;
+    background-color: #f6efeb;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+  }
+.card audio{
+  
+  width: 230px;
+  height: 35px;
+  color: #917b6d;
+
+}
+.card a{
+  color: #917b6d;
+}
+  .footer {
+    padding: 4px;
+    background: #917b6d;
+    color: white;
+  }
+
+  .column1{
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+    text-align: center;
+   
+}
+.column2{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.Row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.Row,
+.Row > .Column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.Column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.Row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #f6efeb;
+  padding: 10px;
+}
+
+.column3 {   
+  float: left;
+  width: 50%;
+  padding-right: 10 px;
+}
+
+/* Right column */
+.column4 {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+}
+
+.column2 a{
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.footer input[type=text]{
+  width: 35%;
+  padding: 2px 2px;
+  margin: 0px 0;
+  box-sizing: border-box;
+  border: 2px solid #f4eee9;
+  border-radius: 10px;
+}
+
+.footer input[type=submit] {
+  background-color: white;
+  align-items: center;
+  width: 20%;
+  border: none;
+  color: #917b6d;
+  padding: 2px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0px;
+  border-radius: 10px;
+}
